@@ -41,7 +41,9 @@ public class NioServer {
                 for (SocketChannel scl : selector) {
                     int read = scl.read(byteBuffer);
                     if (read > 0) {
+                        //将缓存字节数组的指针设置为数组的开始序列即数组下标0
                         byteBuffer.flip();
+                        //设置编码
                         Charset charset = Charset.forName("UTF-8");
                         String receive = charset.newDecoder().decode(byteBuffer.asReadOnlyBuffer()).toString();
                         log.info("线程名称:{}" + "收到信息:{}", Thread.currentThread().getName(), receive);

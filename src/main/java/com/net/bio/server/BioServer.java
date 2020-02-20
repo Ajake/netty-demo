@@ -8,7 +8,18 @@ import java.net.InetSocketAddress;
 import java.net.ServerSocket;
 import java.net.Socket;
 
-
+/**
+* 
+ * <p>
+ * Description:BIO原型
+ * </p>
+ * 
+ * @author RichScout
+ * @version v1.0.0
+ * @since 2020-02-20 17:27:07
+ * @see com.net.bio.server
+ *
+*/
 public class BioServer {
     protected static final Logger log = LoggerFactory.getLogger(BioServer.class);
     //定义端口号
