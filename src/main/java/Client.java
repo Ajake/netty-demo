@@ -4,6 +4,18 @@ import java.net.Socket;
 import java.net.SocketAddress;
 import java.util.Scanner;
 
+/**
+* 
+ * <p>
+ * Description:TCP客户端
+ * </p>
+ * 
+ * @author RichScout
+ * @version v1.0.0
+ * @since 2020-02-20 17:26:12
+ * @see 
+ *
+*/
 public class Client {
     public static void main(String[] args) {
         try {
